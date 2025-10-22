@@ -34,8 +34,8 @@
   },
   "BGP_NEIGHBOR": {
     "default|10.0.0.7": { "asn": "65000", "admin_status": "up" },
-    "default|10.0.0.11": { "asn": "65000", "admin_status": "up" },
-    "default|10.0.5.4": { "asn": "65100", "admin_status": "up" }
+    "default|10.0.0.11": { "asn": "65001", "admin_status": "up" },
+    "default|10.0.5.4": { "asn": "65300", "admin_status": "up" }
   }
 }
 
