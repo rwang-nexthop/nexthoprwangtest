@@ -14,14 +14,13 @@
   },
   "PORT": {
     "Ethernet0": {"admin_status": "up"},
-    "Ethernet4": {"admin_status": "up"},
-    "Ethernet8": {"admin_status": "up"}
+    "Ethernet4": {"admin_status": "up"}
   },
   "INTERFACE": {
     "Ethernet0": {},
     "Ethernet4": {},
     "Ethernet0|10.0.5.3/31": {},
-    "Ethernet4|10.0.0.4/31": {}
+    "Ethernet4|10.0.5.4/31": {}
   },
   "BGP_GLOBALS": {
     "default": {
