@@ -14,13 +14,13 @@ topology:
     dut2:
       kind: sonic-vs
     t1client0:
-      kind: linux
+      kind: nokia_srlinux
     t1client1:
-      kind: linux
+      kind: nokia_srlinux
     t3client0:
-      kind: linux
+      kind: nokia_srlinux
     t3client1:
-      kind: linux
+      kind: nokia_srlinux
 
   links:
     - endpoints: ["dut2:eth1", "dut0:eth1"]
