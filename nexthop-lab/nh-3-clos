@@ -8,11 +8,11 @@ topology:
       image: docker-sonic-vs:2020-11-12
   nodes:
     dut0:
-      kind: sonic-vm
+      kind: sonic-vs
     dut1:
-      kind: sonic-vm
+      kind: sonic-vs
     dut2:
-      kind: sonic-vm
+      kind: sonic-vs
     t1client0:
       kind: linux
     t1client1:
