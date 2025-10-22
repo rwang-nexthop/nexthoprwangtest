@@ -18,15 +18,19 @@ topology:
       startup-config: configs/dut2
     t1client0:
       kind: nokia_srlinux
+      type: ixr-d3
       startup-config: configs/t1client0
     t1client1:
       kind: nokia_srlinux
+      type: ixr-d3
       startup-config: configs/t1client1
     t3client0:
       kind: nokia_srlinux
+      type: ixr-d3
       startup-config: configs/t3client0
     t3client1:
       kind: nokia_srlinux
+      type: ixr-d3
       startup-config: configs/t3client1
 
   links:
