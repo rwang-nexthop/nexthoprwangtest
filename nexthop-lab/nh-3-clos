@@ -1,0 +1,30 @@
+name: sonic-nokia-3-clos
+
+topology:
+  kinds:
+    nokia_srlinux:
+      image: ghcr.io/nokia/srlinux
+    sonic-vs:
+      image: docker-sonic-vs:2020-11-12
+    dut0:
+      kind: sonic-vm
+    dut1:
+      kind: sonic-vm
+    dut2:
+      kind: sonic-vm
+    t1client0:
+      kind: linux
+    t1client1:
+      kind: linux
+    t3client0:
+      kind: linux
+    t3client1:
+      kind: linux
+
+  links:
+    - endpoints: ["dut2:eth0", "dut0:eth0"]
+    - endpoints: ["dut2:eth1", "dut1:eth0"]
+    - endpoints: ["t1client0:e1-1", "dut1:eth1"]
+    - endpoints: ["t1client1:e1-1", "dut1:eth2"]
+    - endpoints: ["t3client0:e1-1", "dut0:eth1"]
+    - endpoints: ["t3client1:e1-1", "dut0:eth2"]
