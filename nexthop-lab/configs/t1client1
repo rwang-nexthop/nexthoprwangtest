@@ -14,4 +14,4 @@ set / network-instance default protocols bgp autonomous-system 65001
 set / network-instance default protocols bgp afi-safi ipv4-unicast admin-state enable
 set / network-instance default protocols bgp neighbor 10.0.0.10 admin-state enable
 set / network-instance default protocols bgp neighbor 10.0.0.10 peer-group ibgp
-set / network-instance default protocols bgp neighbor 10.0.0.10 peer-as 65100
+set / network-instance default protocols bgp neighbor 10.0.0.10 peer-as 65101
