@@ -21,7 +21,7 @@
     "Ethernet0": {},
     "Ethernet4": {},
     "Ethernet8": {},
-    "Ethernet0|10.0.5.3/31": {},
+    "Ethernet0|10.0.5.2/31": {},
     "Ethernet4|10.0.0.0/31": {},
     "Ethernet8|10.0.0.4/31": {}
   },
@@ -35,7 +35,7 @@
   "BGP_NEIGHBOR": {
     "default|10.0.0.1": { "asn": "65200", "admin_status": "up" },
     "default|10.0.0.5": { "asn": "65201", "admin_status": "up" },
-    "default|10.0.5.1": { "asn": "65300", "admin_status": "up" }
+    "default|10.0.5.0": { "asn": "65300", "admin_status": "up" }
   }
 }
 
