@@ -43,7 +43,7 @@
     "default|10.1.0.3": { "asn": "65201", "admin_status": "up" }
   },
   "BGP_NEIGHBOR_AF": {
-    "default|10.0.5.1|ipv4_unicast": {
+    "default|10.0.5.0|ipv4_unicast": {
       "admin_status": "true",
       "route_map_in": "A",
       "route_map_out": "A"
