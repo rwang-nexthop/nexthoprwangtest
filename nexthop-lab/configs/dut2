@@ -1,7 +1,12 @@
 {
   "DEVICE_METADATA": {
     "localhost": {
-      "hostname": "dut2"
+      "hostname": "DUT2",
+      "hwsku": "Force10-S6000",
+      "type": "SpineRouter",
+      "bgp_asn": "65100",
+      "docker_routing_config_mode": "unified",
+      "frr_mgmt_framework_config": "true"
     }
   },
   "FEATURE": {
@@ -20,18 +25,42 @@
     "Ethernet0": {},
     "Ethernet4": {},
     "Ethernet0|10.0.5.0/31": {},
-    "Ethernet4|10.0.5.1/31": {}
+    "Ethernet4|10.0.5.2/31": {}
   },
   "BGP_GLOBALS": {
     "default": {
-      "local_asn": "65102",
+      "local_asn": "65100",
       "router_id": "3.3.3.3",
       "log_nbr_state_changes": "true"
     }
   },
   "BGP_NEIGHBOR": {
-    "default|10.0.5.2": { "asn": "65100", "admin_status": "up" },
-    "default|10.0.5.3": { "asn": "65101", "admin_status": "up" }
-  }
+    "default|10.0.5.1": { "asn": "65100", "admin_status": "up" },
+    "default|10.0.5.3": { "asn": "65100", "admin_status": "up" }
+  },
+  "BGP_NEIGHBOR_AF": {
+    "default|10.0.5.1|ipv4_unicast": {
+      "admin_status": "true",
+      "route_map_in": "A",
+      "route_map_out": "A"
+    },
+    "default|10.0.5.3|ipv4_unicast": {
+      "admin_status": "true",
+      "route_map_in": "A",
+      "route_map_out": "A"
+    }
+  },
+    "BGP_REDISTRIBUTE": {
+    "default|connected": { "admin_status": "enabled" }
+  },
+  "ROUTE_MAP": {
+    "A|10": {
+      "route_operation": "permit"
+    }
+  },
+  "ROUTE_MAP_SET": {
+    "A": {}
+  },
+  "DEVICE_NEIGHBOR": {}
 }
 
