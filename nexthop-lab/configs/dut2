@@ -24,14 +24,14 @@
   },
   "BGP_GLOBALS": {
     "default": {
-      "local_asn": "65100",
+      "local_asn": "65102",
       "router_id": "3.3.3.3",
       "log_nbr_state_changes": "true"
     }
   },
   "BGP_NEIGHBOR": {
     "default|10.0.5.2": { "asn": "65100", "admin_status": "up" },
-    "default|10.0.5.3": { "asn": "65100", "admin_status": "up" }
+    "default|10.0.5.3": { "asn": "65101", "admin_status": "up" }
   }
 }
 
