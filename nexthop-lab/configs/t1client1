@@ -9,7 +9,7 @@ set / network-instance default interface ethernet-1/1.0
 
 set / network-instance default protocols bgp admin-state enable
 set / network-instance default protocols bgp group ibgp admin-state enable
-set / network-instance default protocols bgp router-id 22.22.22.22/32
+set / network-instance default protocols bgp router-id 22.22.22.22
 set / network-instance default protocols bgp autonomous-system 65001
 set / network-instance default protocols bgp afi-safi ipv4-unicast admin-state enable
 set / network-instance default protocols bgp neighbor 10.1.0.6 admin-state enable
